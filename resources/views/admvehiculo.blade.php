@@ -4,14 +4,14 @@
     <div class="row">
       <ol class="breadcrumb">
         <li><a href="/"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-        <li><a href="/usuario">usuario</a></li>
-        <li class="active">Modificar usuario</li>
+        <li><a href="/vehiculo">vehiculo</a></li>
+        <li class="active">Modificar vehiculo</li>
       </ol>
     </div><!--/.row-->
 
     <div class="row">
       <div class="col-lg-12">
-        <h1 class="page-header">Administrar usuario</h1>
+        <h1 class="page-header">Administrar vehiculos</h1>
       </div>
     </div><!--/.row-->
 
@@ -19,20 +19,19 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="panel panel-default">
-            <div class="panel-heading">Ver / Modificar / Eliminar</div>
+            <div class="panel-heading">Modificar / Eliminar</div>
             <div class="panel-body">
-              <table data-toggle="table" data-url="json2"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
+              <table data-toggle="table" data-url="json3"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
                   <thead>
                   <tr>
                       <th data-field="id" data-radio="true" >id</th>
-                      <th data-field="email" data-sortable="true" >Correo</th>
-                      <th data-field="cod_usuario" data-sortable="true">Codigo</th>
-                      <th data-field="tipo_usuario"  data-sortable="true">Tipo </th>
+                      <th data-field="email" data-sortable="true" >PLACA</th>
+                      <th data-field="cod_usuario" data-sortable="true">MARCA</th>
+                      <th data-field="tipo_usuario"  data-sortable="true">TIPO </th>
                   </tr>
                   </thead>
 
               </table>
-              <button type="button" class="btn btn-primary" name="button">VER</button>
               <button type="button" class="btn btn-warning" name="button">MODIFICAR</button>
               <button type="button" class="btn btn-danger" name="button">ELIMINAR</button>
             </div>

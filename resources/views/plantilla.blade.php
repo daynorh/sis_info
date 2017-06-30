@@ -29,7 +29,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><span>SINDICATO MIXTO DE TRANSPORTE </span> 1ro de Mayo</a>
+				<a class="navbar-brand" href="/"><span>SINDICATO MIXTO DE TRANSPORTE </span> 1ro de Mayo</a>
 				<ul class="user-menu">
 					<li class="dropdown pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> {{ Auth::user()->email }} <span class="caret"></span></a>
@@ -136,12 +136,12 @@
 				</a>
 				<ul class="children collapse" id="sub-item-5">
 					<li>
-						<a class="" href="#">
+						<a class="" href="/vehiculo">
 							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Registrar vehiculos
 						</a>
 					</li>
 					<li>
-						<a class="" href="#">
+						<a class="" href="/admvehiculo">
 							<svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Modificar vehiculos
 						</a>
 					</li>

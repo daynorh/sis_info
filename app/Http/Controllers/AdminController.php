@@ -37,6 +37,11 @@ class AdminController extends Controller
        $linea= Linea::get();
         return view('admusuarios')->with('lineas',$linea);
     }
+    public function admvehiculo()
+    {
+       $linea= Linea::get();
+        return view('admvehiculo')->with('lineas',$linea);
+    }
     public function listsocios()
     {
        $linea= Linea::get();
@@ -46,6 +51,11 @@ class AdminController extends Controller
     {
        $socio= Socio::get();
         return view('usuarios')->with('socios',$socio);
+    }
+    public function vehiculo()
+    {
+       $socio= Socio::get();
+        return view('vehiculo')->with('socios',$socio);
     }
     public function json()
     {

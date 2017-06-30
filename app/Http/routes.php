@@ -22,8 +22,10 @@ Route::group(['middleware' => 'auth'], function () {
   Route::get('/', 'AdminController@index')->name('/');
   Route::get('/socios', 'AdminController@socios')->name('/socios');
   Route::get('/usuario', 'AdminController@usuario')->name('/usuario');
+  Route::get('/vehiculo', 'AdminController@vehiculo')->name('/vehiculo');
   Route::get('/admsocios', 'AdminController@admsocios')->name('/admsocios');
   Route::get('/admusuarios', 'AdminController@admusuarios')->name('/admusuarios');
+  Route::get('/admvehiculo', 'AdminController@admvehiculo')->name('/admvehiculo');
   Route::get('/listsocios', 'AdminController@listsocios')->name('/listsocios');
   Route::get('json', 'AdminController@json')->name('json');
   Route::get('json2', 'AdminController@json2')->name('json2');
