@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace transporte\Events;
 
 abstract class Event
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace transporte;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -28,7 +28,7 @@ class User extends Model implements AuthenticatableContract,
      *
      * @var array
      */
-    protected $fillable = ['name', 'email', 'password'];
+    protected $fillable = ['cod_usuario', 'email', 'password','tipo_usuario','id_socio'];
 
     /**
      * The attributes excluded from the model's JSON form.

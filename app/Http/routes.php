@@ -11,9 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('login', function () {
-    return view('login');
-});
+
+Route::get('login', 'Auth\AuthController@getLogin')->name('login');
+Route::post('login', 'Auth\AuthController@postLogin');
+Route::get('logout', 'Auth\AuthController@getLogout');
+
+Route::post('registrar','AdminController@registrar');
+Route::group(['middleware' => 'auth'], function () {
+
+  Route::get('/', 'AdminController@index')->name('/');
+  Route::get('/socios', 'AdminController@socios')->name('/socios');
+  Route::get('/usuario', 'AdminController@usuario')->name('/usuario');
+  Route::get('/admsocios', 'AdminController@admsocios')->name('/admsocios');
+  Route::get('/admusuarios', 'AdminController@admusuarios')->name('/admusuarios');
+  Route::get('/listsocios', 'AdminController@listsocios')->name('/listsocios');
+  Route::get('json', 'AdminController@json')->name('json');
+  Route::get('json2', 'AdminController@json2')->name('json2');
+
+  });
